@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/createMessage">
+
+    <fragment
+        android:id="@+id/createGroup"
+        android:name="com.example.contactapp.fragments.CreateGroup"
+        android:label="fragment_create_group"
+        tools:layout="@layout/fragment_create_group" />
+    <fragment
+        android:id="@+id/createMessage"
+        android:name="com.example.contactapp.fragments.CreateMessage"
+        android:label="fragment_create_message"
+        tools:layout="@layout/fragment_create_message" />
+    <fragment
+        android:id="@+id/addMember"
+        android:name="com.example.contactapp.fragments.AddMember"
+        android:label="fragment_add_member"
+        tools:layout="@layout/fragment_add_member" />
+    <fragment
+        android:id="@+id/sendMessage"
+        android:name="com.example.contactapp.fragments.SendMessage"
+        android:label="fragment_send_message"
+        tools:layout="@layout/fragment_send_message" />
+    <fragment
+        android:id="@+id/logout"
+        android:name="com.example.contactapp.fragments.Logout"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

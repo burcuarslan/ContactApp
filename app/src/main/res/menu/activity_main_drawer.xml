@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/createGroup"
+            android:title="Grup Oluştur" />
+        <item
+            android:id="@+id/addMember"
+            android:title="Gruba Üye Ekle" />
+        <item
+            android:id="@+id/createMessage"
+            android:title="Mesaj Oluştur" />
+        <item
+            android:id="@+id/sendMessage"
+            android:title="Mesaj Gönder" />
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out" />
+    </group>
+</menu>

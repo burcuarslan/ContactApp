@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/app_name">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Grup Oluştur"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/create_group_name"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Grup Adı"
+            android:inputType="textPersonName" />
+
+        <ImageView
+            android:id="@+id/create_group_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_menu_camera" />
+
+        <EditText
+            android:id="@+id/create_group_desc"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_margin="10dp"
+            android:ems="10"
+            android:hint="Açıklama"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/send_message_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="create_group_button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/group_list_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="201913709027 Burcu Arslan" />
+    </LinearLayout>
+</ScrollView>
